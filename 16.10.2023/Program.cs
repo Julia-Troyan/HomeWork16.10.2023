@@ -5,11 +5,15 @@
 // 782 -> 8
 // 918 -> 1
 
-// Console.WriteLine("Введите трёхзначное число");
-// int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите трёхзначное число");
+int num = Convert.ToInt32(Console.ReadLine());
+int result = num / 10 % 10;
+Console.WriteLine(result);
+if (num <100 || num>1000)
+{
+    Console.WriteLine("Вы ввели не трёхзначное число");
+}
 
-// int result = num / 10 % 10;
-// Console.WriteLine(result);
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного
 //  числа или сообщает, что третьей цифры нет.
@@ -17,22 +21,18 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+// Console.Write("Введите число: ");
+// string input = Console.ReadLine();
 
-// int num = new Random().Next(100, 1000);
-// Console.WriteLine(num);
-
-// int num1 = num / 10;
-// int num2 = num / 10;
-
-// if (result = num )
+// if (input.Length >= 3)
 // {
-//     Console.WriteLine($"Третья цифра в числе: {result}");
+//     char thirdDigit = input[2];
+//     Console.WriteLine($"Третья цифра: {thirdDigit}");
 // }
 // else
 // {
 //     Console.WriteLine("Третьей цифры нет");
 // }
-
 
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, 
@@ -41,18 +41,18 @@
 // 7 -> да
 // 1 -> нет
 
-Console.Write("Введите номер дня недели (1-7): ");
-if (int.TryParse(Console.ReadLine(), out int dayNumber))
-{
-    if (dayNumber >= 1 && dayNumber <= 7)
-    {
-        if (dayNumber == 6 || dayNumber == 7)
-        {
-            Console.WriteLine("Да, это выходной день.");
-        }
-        else
-        {
-            Console.WriteLine("Нет, это не выходной день.");
-        }
-    }
-}
+// Console.Write("Введите номер дня недели (1-7): ");
+// if (int.TryParse(Console.ReadLine(), out int dayNumber))
+// {
+//     if (dayNumber >= 1 && dayNumber <= 7)
+//     {
+//         if (dayNumber == 6 || dayNumber == 7)
+//         {
+//             Console.WriteLine("Да, это выходной день.");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Нет, это не выходной день.");
+//         }
+//     }
+// }
