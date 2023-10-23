@@ -5,14 +5,31 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Введите трёхзначное число");
+Console.WriteLine("Введите трёхзначное число:");
 int num = Convert.ToInt32(Console.ReadLine());
-int result = num / 10 % 10;
-Console.WriteLine(result);
-if (num <100 || num>1000)
+
+
+if (num < 100 && num > 1000)
 {
+    int result = num / 10 % 10;
     Console.WriteLine("Вы ввели не трёхзначное число");
 }
+
+else
+{
+    if (num <0)
+    {
+        int result = num / 10 % 10* (-1);
+        Console.WriteLine($"число отрицательное, нужная цифра {result}");
+    }
+    else
+    {
+        int result = num / 10 % 10 ;
+        Console.WriteLine($"число положительное, нужная цифра {result}");
+    }
+    
+}
+
 
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного
